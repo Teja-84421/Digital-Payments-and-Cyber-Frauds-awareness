@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Payments & Cyber Fraud Awareness</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">⚡ CyberSafe</div>
+  <div class="nav-right">
+    <ul class="nav-links">
+      <li><a href="#payments">Payments</a></li>
+      <li><a href="#frauds">Frauds</a></li>
+      <li><a href="#protect">Stay Safe</a></li>
+      <li><a href="#videos">Videos</a></li>
+      <li><a href="#quiz">Quiz</a></li>
+      <li><a href="#help">Help</a></li>
+    </ul>
+    <!-- THEME TOGGLE -->
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+      <span class="toggle-icon" id="toggle-icon">☀️</span>
+      <div class="toggle-track">
+        <div class="toggle-thumb"></div>
+      </div>
+      <span class="toggle-label" id="toggle-label">Light</span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-bg-circle c1"></div>
+  <div class="hero-bg-circle c2"></div>
+  <h1>
+    <span class="highlight">Digital Payments</span> &<br>
+    <span class="danger">Cyber Fraud</span> Awareness
+  </h1>
+  <p class="hero-sub">
+    India's digital payment ecosystem is growing at lightning speed—but so are the threats. Know how to pay smart, spot scams, and protect your money in the digital age.
+  </p>
+  <div class="hero-ctas">
+    <a href="#payments" class="btn btn-primary">Explore →</a>
+    <a href="#quiz" class="btn btn-outline">Take the Quiz</a>
+  </div>
+  <div class="hero-stats">
+    <div class="stat">
+      <span class="stat-num">₹20T+</span>
+      <div class="stat-label">UPI transactions (2024)</div>
+    </div>
+    <div class="stat">
+      <span class="stat-num">7.25L</span>
+      <div class="stat-label">Cyber frauds reported (2023)</div>
+    </div>
+    <div class="stat">
+      <span class="stat-num">₹66K Cr</span>
+      <div class="stat-label">Online fraud losses</div>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- DIGITAL PAYMENTS -->
+<section id="payments">
+  <div class="section-label">01 — What are Digital Payments</div>
+  <h2 class="section-title">The Digital Payment Ecosystem</h2>
+  <p class="section-desc">Digital payments are electronic transactions made without physical cash. India has one of the world's fastest-growing digital payment systems, powered by multiple platforms and technologies.</p>
+
+  <div class="payments-grid">
+    <div class="payment-card">
+      <span class="payment-icon">📱</span>
+      <h3>UPI (Unified Payments Interface)</h3>
+      <p>Real-time bank-to-bank transfer via mobile apps like GPay, PhonePe, Paytm. Uses VPA (Virtual Payment Address). Instant, 24×7, zero cost for users.</p>
+    </div>
+    <div class="payment-card">
+      <span class="payment-icon">💳</span>
+      <h3>Debit / Credit Cards</h3>
+      <p>Plastic or virtual cards linked to bank accounts or credit lines. Use POS machines, online checkouts, and ATMs. Protected by CVV and OTP.</p>
+    </div>
+    <div class="payment-card">
+      <span class="payment-icon">🏧</span>
+      <h3>Net Banking / NEFT / RTGS</h3>
+      <p>Bank portals for fund transfers. NEFT works in batches; RTGS is real-time for large amounts (₹2L+). Ideal for business and high-value transactions.</p>
+    </div>
+    <div class="payment-card">
+      <span class="payment-icon">🔲</span>
+      <h3>QR Code Payments</h3>
+      <p>Scan a code to pay instantly. Used at shops, restaurants, and petrol pumps. Linked to UPI or wallets. Always verify the receiver before scanning.</p>
+    </div>
+    <div class="payment-card">
+      <span class="payment-icon">👛</span>
+      <h3>Digital Wallets</h3>
+      <p>Apps like Paytm, Amazon Pay, MobiKwik store money for quick payments. Convenient for small purchases, online shopping, and utility bills.</p>
+    </div>
+    <div class="payment-card">
+      <span class="payment-icon">🌐</span>
+      <h3>CBDC (Digital Rupee)</h3>
+      <p>RBI's official digital currency. A government-backed e-rupee that works like cash but is fully digital. Being piloted across Indian banks since 2022.</p>
+    </div>
+  </div>
+
+  <!-- HOW IT WORKS -->
+  <h3 style="margin-top:3.5rem; margin-bottom:1rem; font-size:1.2rem; font-weight:700; color:var(--accent);">How a UPI Transaction Works</h3>
+  <div class="flow-container">
+    <div class="flow-step">
+      <div class="flow-num">01</div>
+      <h4>Initiate</h4>
+      <p>User enters UPI ID / scans QR and enters amount</p>
+    </div>
+    <div class="flow-step">
+      <div class="flow-num">02</div>
+      <h4>Authenticate</h4>
+      <p>UPI PIN entered on secure keypad</p>
+    </div>
+    <div class="flow-step">
+      <div class="flow-num">03</div>
+      <h4>NPCI Switch</h4>
+      <p>NPCI routes request to payer's bank</p>
+    </div>
+    <div class="flow-step">
+      <div class="flow-num">04</div>
+      <h4>Debit & Credit</h4>
+      <p>Payer's account debited, receiver's credited</p>
+    </div>
+    <div class="flow-step">
+      <div class="flow-num">05</div>
+      <h4>Confirm</h4>
+      <p>Both parties notified instantly</p>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- CYBER FRAUDS -->
+<section id="frauds" style="max-width:1100px; padding: 6rem 3rem;">
+  <div class="fraud-section">
+    <div class="section-label" style="color:var(--accent2);">
+      <span style="background:var(--accent2); width:24px; height:1px; display:inline-block;"></span>
+      02 — Cyber Frauds
+    </div>
+    <h2 class="section-title">Types of Cyber Frauds in India</h2>
+    <p class="section-desc">Cybercriminals are evolving rapidly. Here are the most common fraud types targeting digital payment users in India.</p>
+
+    <div class="fraud-grid">
+      <div class="fraud-card">
+        <span class="fraud-icon">🎣</span>
+        <div class="fraud-tag">Phishing</div>
+        <h3>Fake Emails & Websites</h3>
+        <p>Fraudsters send fake emails mimicking banks (SBI, HDFC) or apps. Clicking links takes you to a fake site that steals your login credentials and OTP.</p>
+      </div>
+      <div class="fraud-card">
+        <span class="fraud-icon">📞</span>
+        <div class="fraud-tag">Vishing</div>
+        <h3>Fake Customer Care Calls</h3>
+        <p>Callers pose as bank officials, claiming your KYC is expired or account will be blocked. They ask for OTP, card details, or UPI PIN to "verify."</p>
+      </div>
+      <div class="fraud-card">
+        <span class="fraud-icon">🔲</span>
+        <div class="fraud-tag">QR Scam</div>
+        <h3>Fake QR Code Fraud</h3>
+        <p>Scammers send QR codes saying "scan to receive money." But in UPI, scanning a QR always means you PAY — you can never receive via a QR code.</p>
+      </div>
+      <div class="fraud-card">
+        <span class="fraud-icon">💸</span>
+        <div class="fraud-tag">OLX / Job Fraud</div>
+        <h3>Online Marketplace Scams</h3>
+        <p>Fake buyers on OLX, Quikr, or job portals. They send fake advance payments and ask you to "refund" a small amount via UPI, stealing far more.</p>
+      </div>
+      <div class="fraud-card">
+        <span class="fraud-icon">🖥️</span>
+        <div class="fraud-tag">Remote Access</div>
+        <h3>Screen Sharing Fraud</h3>
+        <p>Fraudsters ask you to install AnyDesk, TeamViewer, etc. under the guise of "technical support." They then access your banking apps and steal money.</p>
+      </div>
+      <div class="fraud-card">
+        <span class="fraud-icon">💬</span>
+        <div class="fraud-tag">SIM Swap</div>
+        <h3>SIM Swap Attack</h3>
+        <p>Criminals get your phone number ported to their SIM using forged documents. They then receive all your OTPs and drain your accounts.</p>
+      </div>
+      <div class="fraud-card">
+        <span class="fraud-icon">🏦</span>
+        <div class="fraud-tag">Loan App</div>
+        <h3>Predatory Loan Apps</h3>
+        <p>Fake instant loan apps collect your Aadhaar, PAN, and contacts. They harass users with threats of sharing data publicly if immediate repayments aren't made.</p>
+      </div>
+      <div class="fraud-card">
+        <span class="fraud-icon">🎰</span>
+        <div class="fraud-tag">Investment</div>
+        <h3>Ponzi / Crypto Scams</h3>
+        <p>Promises of 30–100% returns via WhatsApp groups or Telegram. Often disguised as crypto, trading, or pyramid schemes. Victims lose entire savings.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RED FLAGS -->
+<section>
+  <div class="section-label">02b — Warning Signs</div>
+  <h2 class="section-title">🚨 Red Flags to Watch Out For</h2>
+  <p class="section-desc">Stop before you transact. If any of these signs appear, it's very likely a scam.</p>
+
+  <div class="flags-list">
+    <div class="flag-item"><div class="flag-dot"></div><p>Someone asks for your OTP, PIN, CVV, or password — no legitimate bank or app ever does this</p></div>
+    <div class="flag-item"><div class="flag-dot"></div><p>You're asked to "send a small amount first" to receive a larger one — this is always a scam</p></div>
+    <div class="flag-item"><div class="flag-dot"></div><p>Urgent pressure to act within minutes — "your account will be blocked immediately"</p></div>
+    <div class="flag-item"><div class="flag-dot"></div><p>A stranger sends a QR code and says "scan to receive money" — impossible in UPI</p></div>
+    <div class="flag-item"><div class="flag-dot"></div><p>Requests to install apps like AnyDesk, TeamViewer, or Screen Mirroring</p></div>
+    <div class="flag-item"><div class="flag-dot"></div><p>Links that look like real bank websites but have slight spelling differences</p></div>
+    <div class="flag-item"><div class="flag-dot"></div><p>Job offers asking for a "security deposit" or advance payment via UPI</p></div>
+    <div class="flag-item"><div class="flag-dot"></div><p>Lottery / lucky draw winnings you never entered — you must pay a fee to "claim"</p></div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- TIPS -->
+<section id="protect">
+  <div class="section-label">03 — Protection Tips</div>
+  <h2 class="section-title">How to Stay Safe Online</h2>
+  <p class="section-desc">Simple habits can prevent most digital frauds. Follow these practices every time you make a digital transaction.</p>
+
+  <div class="tips-grid">
+    <div class="tip-card">
+      <div class="tip-num">TIP // 01</div>
+      <h3>Never Share OTP or PIN</h3>
+      <p>Your OTP, UPI PIN, card CVV, and net banking password are yours alone. No bank, app, or government agency will ever ask for these.</p>
+    </div>
+    <div class="tip-card">
+      <div class="tip-num">TIP // 02</div>
+      <h3>Verify Before You Pay</h3>
+      <p>Always double-check the recipient's name shown on your UPI app before confirming. One wrong digit could send money to a stranger.</p>
+    </div>
+    <div class="tip-card">
+      <div class="tip-num">TIP // 03</div>
+      <h3>Use Only Official Apps</h3>
+      <p>Download payment apps only from Google Play Store or Apple App Store. Avoid APK files from WhatsApp or unknown websites.</p>
+    </div>
+    <div class="tip-card">
+      <div class="tip-num">TIP // 04</div>
+      <h3>Enable Transaction Alerts</h3>
+      <p>Turn on SMS and app notifications for every transaction. Monitor your bank statement weekly. Report unauthorized transactions immediately.</p>
+    </div>
+    <div class="tip-card">
+      <div class="tip-num">TIP // 05</div>
+      <h3>Set UPI & Card Limits</h3>
+      <p>Use your bank app to set daily UPI and card spending limits. This minimizes damage if your credentials are ever compromised.</p>
+    </div>
+    <div class="tip-card">
+      <div class="tip-num">TIP // 06</div>
+      <h3>Use Strong, Unique Passwords</h3>
+      <p>Never reuse passwords across apps. Use a password manager. Enable biometric or 2-factor authentication wherever possible.</p>
+    </div>
+    <div class="tip-card">
+      <div class="tip-num">TIP // 07</div>
+      <h3>Secure Your SIM</h3>
+      <p>Alert your telecom operator immediately if your SIM suddenly stops working. A dead SIM could mean you're being SIM-swapped.</p>
+    </div>
+    <div class="tip-card">
+      <div class="tip-num">TIP // 08</div>
+      <h3>Avoid Public Wi-Fi for Payments</h3>
+      <p>Public Wi-Fi networks can be intercepted. Use mobile data when doing any financial transaction. A VPN adds an extra layer of security.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- CASE STUDIES -->
+<section>
+  <div class="section-label">04 — Real Cases</div>
+  <h2 class="section-title">Real-World Fraud Cases in India</h2>
+  <p class="section-desc">These documented cases show how everyday citizens fell victim to cyber fraud — and what we can learn from them.</p>
+
+  <div class="cases-container">
+    <div class="case-card">
+      <div class="case-type">Vishing</div>
+      <div class="case-content">
+        <h3>Fake TRAI Officer Threatens Number Block</h3>
+        <p>A Mumbai businessman received a call from a "TRAI officer" claiming his number would be disconnected for illegal use. Transferred to a "CBI officer," he was made to transfer ₹1.9 crore in "digital arrest" over 3 days before realizing the fraud.</p>
+      </div>
+      <div class="case-loss">₹1.9 Cr<span>Loss</span></div>
+    </div>
+    <div class="case-card">
+      <div class="case-type">OLX Scam</div>
+      <div class="case-content">
+        <h3>Army Officer Posing as Buyer</h3>
+        <p>Victim listed a second-hand sofa on OLX. A fake army officer offered to buy it and sent a "payment QR" to receive money. The victim scanned and entered PIN, losing money instead of receiving it.</p>
+      </div>
+      <div class="case-loss">₹80,000<span>Loss</span></div>
+    </div>
+    <div class="case-card">
+      <div class="case-type">Loan App</div>
+      <div class="case-content">
+        <h3>Predatory Loan App Harassment</h3>
+        <p>A Hyderabad resident downloaded a "quick loan" app and borrowed ₹5,000. The app accessed his contacts. When he couldn't repay the next day, fraudsters morphed his photo and messaged all his contacts calling him a criminal.</p>
+      </div>
+      <div class="case-loss">₹5,000<span>+ Harassment</span></div>
+    </div>
+    <div class="case-card">
+      <div class="case-type">Investment Scam</div>
+      <div class="case-content">
+        <h3>WhatsApp Crypto Trading Group</h3>
+        <p>A Bengaluru IT professional was added to a WhatsApp group where "experts" showed fake profits from crypto trading. He invested ₹12 lakh. When he tried to withdraw, he was asked to pay more "taxes." He lost everything.</p>
+      </div>
+      <div class="case-loss">₹12 Lakh<span>Loss</span></div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- VIDEO RESOURCES -->
+<section id="videos">
+  <div class="section-label">05 — Watch &amp; Learn</div>
+  <h2 class="section-title">Video Resources</h2>
+  <p class="section-desc">Watch these curated videos to understand how cyber frauds actually happen — and how to protect yourself. All videos are from official and trusted sources.</p>
+
+  <div class="video-tabs">
+    <button class="vtab active" onclick="filterVideos('all', this)">All</button>
+    <button class="vtab" onclick="filterVideos('fraud', this)">Fraud Types</button>
+    <button class="vtab" onclick="filterVideos('upi', this)">UPI Safety</button>
+    <button class="vtab" onclick="filterVideos('awareness', this)">Awareness</button>
+  </div>
+
+  <div class="video-grid" id="video-grid">
+
+    <div class="video-card" data-cat="upi">
+      <div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/UasqK0JA6co" title="UPI Fraud Awareness — NPCI Official" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="video-info">
+        <span class="video-tag">UPI Safety</span>
+        <h3>UPI Fraud Awareness — NPCI Official</h3>
+        <p>An official awareness initiative by NPCI educating users on the types of UPI frauds and how to easily avoid them.</p>
+      </div>
+    </div>
+
+    <div class="video-card" data-cat="upi">
+      <div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/vBH4nrJtKiI" title="Cyber Awareness on UPI Frauds" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="video-info">
+        <span class="video-tag">UPI Safety</span>
+        <h3>Cyber Awareness on UPI Frauds</h3>
+        <p>Learn the most common UPI scam tricks including fake collect requests, QR scams, and social engineering tactics.</p>
+      </div>
+    </div>
+
+    <div class="video-card" data-cat="awareness">
+      <div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/TyzSwiOGz2o" title="Banking Cyber Crimes Exposed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="video-info">
+        <span class="video-tag">Awareness</span>
+        <h3>Banking Cyber Crimes Exposed</h3>
+        <p>How cybercriminals target bank accounts using AI and social engineering — and what you must know to stay protected in 2025.</p>
+      </div>
+    </div>
+
+    <div class="video-card" data-cat="fraud">
+      <div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/vtbtkab9lcs" title="What Is SIM Swapping?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="video-info">
+        <span class="video-tag">SIM Swap</span>
+        <h3>What Is SIM Swapping?</h3>
+        <p>How criminals port your mobile number to a new SIM, intercept all OTPs, and drain bank accounts — with tips on prevention.</p>
+      </div>
+    </div>
+
+    <div class="video-card" data-cat="fraud">
+      <div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/H1lmavxI7BU" title="Job Scams — How to Spot and Avoid" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="video-info">
+        <span class="video-tag">Job Fraud</span>
+        <h3>Job Scams — How to Spot &amp; Avoid Them</h3>
+        <p>10 tips to identify fake job postings and AI-powered recruitment scams that trick victims into sending money or sharing credentials.</p>
+      </div>
+    </div>
+
+    <div class="video-card" data-cat="upi">
+      <div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/fBKSmfOpC6s" title="Fake UPI Handle Scams and How to Stay Safe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="video-info">
+        <span class="video-tag">UPI Safety</span>
+        <h3>Fake UPI Handle Scams &amp; How to Stay Safe</h3>
+        <p>SEBI's guide on spotting fraudulent UPI handles, validated payment channels, and how to verify before you transact.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="video-note">
+    <span>📺</span>
+    <p>Videos open from YouTube. All content is from verified educational and government channels. If a video is unavailable in your region, search the title directly on YouTube.</p>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- QUIZ -->
+<section id="quiz" style="max-width:800px;">
+  <div class="section-label">06 — Test Yourself</div>
+  <h2 class="section-title">Cyber Fraud Awareness Quiz</h2>
+  <p class="section-desc">Can you spot the scam? Test your knowledge with these real-world scenarios.</p>
+
+  <div class="quiz-section">
+    <div class="quiz-q" id="quiz-question">Loading question...</div>
+    <div class="quiz-options" id="quiz-options"></div>
+    <div class="quiz-feedback" id="quiz-feedback"></div>
+    <div class="quiz-score" id="quiz-score"></div>
+    <button class="btn btn-outline" id="quiz-next" onclick="nextQuestion()" style="display:none;">Next Question →</button>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- HELPLINES -->
+<section id="help">
+  <div class="section-label">07 — Get Help</div>
+  <h2 class="section-title">Reported a Fraud? Act Fast!</h2>
+  <p class="section-desc">Time is critical. Report cyber fraud immediately — banks can often freeze funds within hours of reporting. Here's who to contact.</p>
+
+  <div class="help-grid">
+    <div class="help-card">
+      <div class="org">National Cyber Crime Portal</div>
+      <h3>Cyber Crime Helpline</h3>
+      <div class="number">1930</div>
+      <p>Call within minutes of fraud for best chance of fund recovery. Available 24×7.</p>
+    </div>
+    <div class="help-card">
+      <div class="org">Online Reporting</div>
+      <h3>Report @ Cyber Portal</h3>
+      <div class="number">cybercrime.gov.in</div>
+      <p>File FIR online for financial, social media, and other cyber crimes.</p>
+    </div>
+    <div class="help-card">
+      <div class="org">Reserve Bank of India</div>
+      <h3>RBI Banking Ombudsman</h3>
+      <div class="number">14448</div>
+      <p>Escalate banking disputes and unauthorized transaction complaints to RBI.</p>
+    </div>
+    <div class="help-card">
+      <div class="org">Your Bank</div>
+      <h3>Bank Fraud Helpline</h3>
+      <div class="number">Immediately</div>
+      <p>Call your bank's 24×7 helpline and freeze your account / block card without delay.</p>
+    </div>
+  </div>
+
+  <div class="golden-rule">
+    <p>
+      <strong>Golden Rule:</strong> Call 1930 first, then your bank, then file an online complaint at cybercrime.gov.in. Keep all screenshots, transaction IDs, and call recordings as evidence. The sooner you report, the higher the chance of fund recovery.
+    </p>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- FOOTER -->
+<footer>
+  <p>
+    <strong>Digital Payments & Cyber Fraud Awareness</strong><br>
+    <span class="footer-sub">
+      Sources: NPCI, RBI, Ministry of Electronics &amp; IT (MeitY), CERT-In, Cybercrime.gov.in<br>
+      For educational purposes only. Always verify information with official government sources.
+    </span>
+  </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
